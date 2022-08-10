@@ -3,7 +3,7 @@
 <title>RL Fan Clash!</title>
 </head>
 <body>
-<!-- file:///D:/Documents/Projects/RLFanClash/index.html -->
+<!-- file:///D:/Documents/Projects/meinez.github.io/index.html -->
 	<canvas id="myChart" width="720" height="250"></canvas>
 	<button onClick="resetZoom()">Reset zoom</button>
 </body>
@@ -65,7 +65,7 @@ const data = {
     borderColor: 'rgb(255, 1, 118)',
   },
   {
-    label: 'CEX',
+    label: 'ENDPOINT',
     data: CEX_POINTS,
     borderColor: 'rgb(250, 0, 0)',
   },
@@ -82,7 +82,8 @@ const config = {
 		line: {
 			borderWidth: 1,
 			fill: false,
-			tension: 0
+			tension: 0,
+			pointRadius: 20
 		},
 		point: {
 			radius: 0
@@ -101,6 +102,9 @@ const config = {
 				},
 				drag: {
 					enabled: false,
+				},
+				pinch: {
+					enabled: true,
 				}
 			}
 		}
